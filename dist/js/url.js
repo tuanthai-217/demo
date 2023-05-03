@@ -1,4 +1,4 @@
-const URL = "https://avaxpad.fi/"
+const URL = ""
     // const URL = "http://127.0.0.1:5500/landing_page/"
 pathLanding = ['terms-of-use', 'private-policy', 'airdrop']
 const keys = [{
