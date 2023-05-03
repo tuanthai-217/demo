@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.ttf"); }
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../assets/fonts/Inter-Bold.ttf"); }
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../assets/fonts/Inter-SemiBold.ttf"); }
+@font-face {
+  font-family: "Transducer";
+  src: url("../assets/fonts/transducer-bold.otf"); }
+@font-face {
+  font-family: "Transducer-Black";
+  src: url("../assets/fonts/transducer-black.otf"); }
+@font-face {
+  font-family: "Transducer-Regular";
+  src: url("../assets/fonts/transducer-regular.otf"); }
+html {
+  font-size: 10px;
+  min-width: 320px;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Transducer"; }
+
+.btn {
+  cursor: pointer;
+  background: #FFE300;
+  border: 3px solid #E3A401;
+  transition: all 0.3s ease-in;
+  border-radius: 24px; }
+  .btn:hover {
+    transform: scale(1.005);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+    transition: all 0.3s ease-out; }
+  .btn a {
+    font-family: 'Transducer';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000; }
+
+.btn-pd-24 {
+  padding: 24px; }
+
+.btn-pd-16 {
+  padding: 16px; }
+
+.d-flex {
+  display: flex; }
+
+.color-black {
+  color: #000000; }
+
+header {
+  background-image: url(../assets/background/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 53px;
+  padding-bottom: 185px; }
+  header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #7BB855;
+    border-radius: 30px;
+    padding: 16px 32px; }
+    header .navigation .web-name a {
+      font-family: 'Transducer-Black';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 77px; }
+    header .navigation .logo {
+      width: 220px;
+      height: 77px;
+      object-fit: contain; }
+    header .navigation .nav {
+      display: flex;
+      align-items: center; }
+      header .navigation .nav ul {
+        display: flex;
+        gap: 32px;
+        margin-right: 32px; }
+        header .navigation .nav ul li {
+          display: inline-block;
+          cursor: pointer; }
+          header .navigation .nav ul li:last-child {
+            margin-right: 0; }
+          header .navigation .nav ul li a {
+            font-family: 'Transducer';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000; }
+            header .navigation .nav ul li a:hover {
+              color: #cc0438; }
+            header .navigation .nav ul li a.active {
+              color: #cc0438; }
+      header .navigation .nav .control button.btn-border-pink {
+        margin-right: 8px; }
+  header .top .inner {
+    display: flex;
+    justify-content: space-between; }
+    header .top .inner > div h1 {
+      font-family: 'Transducer-Black';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 144px;
+      color: #000000;
+      margin-top: 104px; }
+    header .top .inner > div p {
+      font-family: 'Transducer-Regular';
+      font-style: normal;
+      color: #000000; }
+    header .top .inner > div .des-top {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 32px;
+      margin-bottom: 32px; }
+    header .top .inner > div .control {
+      gap: 16px; }
+    header .top .inner > div .txt-contract {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 32px; }
+    header .top .inner > div .contract-address {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      background: #7BB855;
+      border: 2px solid #427621;
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 16px; }
+      header .top .inner > div .contract-address p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-right: 16px; }
+    header .top .inner .img-top-left {
+      margin-top: 110px; }
+  header .navbar-toggle,
+  header .sp {
+    display: none; }
+
+.exchanges {
+  background: #7BB855;
+  padding: 24px; }
+  .exchanges ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+
+.title {
+  font-family: 'Transducer-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px; }
+
+.about {
+  background-image: url(../assets/background/bg_2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 1600px;
+  height: 100%;
+  padding-top: 127px; }
+  .about .inner {
+    width: 100%;
+    position: relative; }
+    .about .inner .title-left {
+      position: absolute;
+      top: -40px;
+      right: 6%; }
+    .about .inner p {
+      max-width: 628px;
+      font-family: 'Transducer-Regular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 30px; }
+  .about .image-bottom {
+    width: 100%;
+    text-align: center; }
+
+.how-to-buy {
+  width: 100%;
+  background-image: url(../assets/background/bg_3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 200px; }
+  .how-to-buy .inner h1 {
+    text-align: center; }
+  .how-to-buy .inner ul.max-width {
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    padding-top: 64px; }
+    .how-to-buy .inner ul.max-width li {
+      width: calc(100% / 3);
+      background: #FFFFFF;
+      border: 2px solid #508F47;
+      border-radius: 24px;
+      padding: 32px; }
+      .how-to-buy .inner ul.max-width li .buy-txt {
+        font-family: 'Transducer';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 24px;
+        margin-bottom: 24px; }
+      .how-to-buy .inner ul.max-width li span {
+        font-family: 'Transducer-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px; }
+      .how-to-buy .inner ul.max-width li .btn {
+        text-align: center;
+        font-family: 'Transducer';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin-top: 24px; }
+  .how-to-buy .inner .tokenomic {
+    padding-top: 157px; }
+    .how-to-buy .inner .tokenomic .title-tokenomic {
+      text-align: center; }
+    .how-to-buy .inner .tokenomic .des-tokenomic {
+      font-family: 'Transducer';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      margin-top: 10px; }
+    .how-to-buy .inner .tokenomic .tokenomic-container {
+      width: 100%;
+      height: 500px;
+      padding-top: 80px;
+      position: relative; }
+      .how-to-buy .inner .tokenomic .tokenomic-container .left .supply {
+        background-image: url(../assets/images/img_supply.png);
+        background-repeat: no-repeat;
+        width: 525px;
+        height: 69px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .how-to-buy .inner .tokenomic .tokenomic-container .left .supply p {
+          font-family: 'Transducer';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 25.6093px;
+          line-height: 31px;
+          text-transform: uppercase;
+          color: #14510C; }
+      .how-to-buy .inner .tokenomic .tokenomic-container .left .supply-list {
+        margin-top: 24px; }
+        .how-to-buy .inner .tokenomic .tokenomic-container .left .supply-list li {
+          color: #366A2F;
+          list-style: disc;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: uppercase;
+          margin-left: 20px; }
+          .how-to-buy .inner .tokenomic .tokenomic-container .left .supply-list li:nth-child(1) {
+            list-style: none;
+            margin-left: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 16px; }
+      .how-to-buy .inner .tokenomic .tokenomic-container .right {
+        position: absolute;
+        right: 0;
+        top: 150px; }
+        .how-to-buy .inner .tokenomic .tokenomic-container .right p {
+          font-family: 'Transducer';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          text-transform: uppercase;
+          color: #14510C; }
+          .how-to-buy .inner .tokenomic .tokenomic-container .right p:nth-child(2) {
+            position: absolute;
+            top: -20px;
+            right: -30px; }
+          .how-to-buy .inner .tokenomic .tokenomic-container .right p:nth-child(3) {
+            position: absolute;
+            bottom: 70px;
+            right: 200px; }
+
+.roadmap {
+  width: 100%;
+  background-image: url(../assets/background/bg_4.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .roadmap h1 {
+    margin-top: 24px; }
+  .roadmap .roadmap-container {
+    width: 100%;
+    height: 516px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    margin-top: 64px; }
+    .roadmap .roadmap-container .roadmap-item-circle {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 519px;
+      height: 100%; }
+      .roadmap .roadmap-container .roadmap-item-circle:nth-child(1) {
+        left: 0;
+        padding-left: 85px; }
+      .roadmap .roadmap-container .roadmap-item-circle:nth-child(2) {
+        left: 30%;
+        padding-left: 85px; }
+      .roadmap .roadmap-container .roadmap-item-circle:nth-child(3) {
+        right: 0;
+        padding-left: 125px; }
+      .roadmap .roadmap-container .roadmap-item-circle img {
+        position: absolute;
+        left: 0;
+        object-fit: contain; }
+      .roadmap .roadmap-container .roadmap-item-circle ul {
+        text-align: left; }
+        .roadmap .roadmap-container .roadmap-item-circle ul .phase {
+          font-family: 'Transducer';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 38px;
+          text-transform: uppercase;
+          list-style: none;
+          margin-bottom: 18px; }
+        .roadmap .roadmap-container .roadmap-item-circle ul .detail {
+          list-style: disc;
+          font-family: 'Transducer-Regular';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 1px;
+          padding-bottom: 6px; }
+  .roadmap .our {
+    margin-top: 100px;
+    padding-bottom: 450px;
+    position: relative; }
+    .roadmap .our .inner {
+      margin-left: 50px; }
+      .roadmap .our .inner .socials {
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 150px; }
+
+.max-width {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 1290px) {
+  header, .exchanges, .about, .how-to-buy, .roadmap {
+    padding-left: 12px;
+    padding-right: 12px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+@keyframes bottom_to_top {
+  0% {
+    opacity: 0;
+    transition: 2s all;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transition: 2s all;
+    transform: translateY(0);
+  }
+}
+@keyframes top_to_bottom {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes left_to_right {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes right_to_left {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes small_to_big {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fade_out_top_overview_content {
+  opacity: 0;
+  visibility: visible;
+}
+
+.fade_in_top_overview_content {
+  opacity: 1;
+  overflow-y: unset;
+  visibility: visible;
+  animation-name: bottom_to_top;
+  animation-duration: 2s;
+}
+
+.fade_out_top_overview_img {
+  opacity: 0;
+  visibility: visible;
+}
+
+.fade_in_top_overview_img {
+  opacity: 1;
+  overflow-y: unset;
+  visibility: visible;
+  animation-name: bottom_to_top;
+  animation-duration: 2s;
+}
+
+.fade_out_left_value_locked {
+  opacity: 0;
+  visibility: visible;
+}
+
+.fade_in_left_value_locked {
+  opacity: 1;
+  overflow-y: unset;
+  visibility: visible;
+  animation-name: left_to_right;
+  animation-duration: 2s;
+}
+
+/*# sourceMappingURL=animatin.css.map */

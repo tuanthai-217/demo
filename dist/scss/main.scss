@@ -1,0 +1,572 @@
+@import "./font.scss";
+@import "./variable.scss";
+
+// SECTION COMMON STYLE
+html {
+    font-size: 10px;
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Transducer";
+}
+
+.btn {
+    cursor: pointer;
+    background: #FFE300;
+    border: 3px solid #E3A401;
+    transition: all 0.3s ease-in;
+    border-radius: 24px;
+
+
+    &:hover {
+        transform: scale(1.005);
+        box-shadow: 0 6px 12px rgba($color: #000000, $alpha: 0.16);
+        transition: all 0.3s ease-out;
+    }
+
+    a {
+        font-family: 'Transducer';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+.btn-pd-24 {
+    padding: 24px;
+
+}
+
+.btn-pd-16 {
+    padding: 16px;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.color-black {
+    color: #000000;
+}
+
+// END SECTION COMMON STYLE
+// HEADER
+header {
+    background-image: url(../assets/background/bg_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 53px;
+    padding-bottom: 185px;
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $max_width;
+        margin-left: auto;
+        margin-right: auto;
+        background: $color_primary;
+        border-radius: 30px;
+        padding: 16px 32px;
+
+        .web-name {
+            a {
+                font-family: 'Transducer-Black';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 64px;
+                line-height: 77px;
+            }
+        }
+
+        .logo {
+            width: 220px;
+            height: 77px;
+            object-fit: contain;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 32px;
+                margin-right: 32px;
+
+                li {
+                    display: inline-block;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        font-family: 'Transducer';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #000000;
+
+                        &:hover {
+                            color: #cc0438;
+                        }
+
+                        &.active {
+                            color: #cc0438;
+                        }
+                    }
+                }
+            }
+
+            .control {
+                button.btn-border-pink {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .top {
+        .inner {
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+
+            >div {
+                h1 {
+                    font-family: 'Transducer-Black';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 120px;
+                    line-height: 144px;
+                    color: #000000;
+                    margin-top: 104px;
+                }
+
+                p {
+                    font-family: 'Transducer-Regular';
+                    font-style: normal;
+                    color: #000000;
+
+                }
+
+                .des-top {
+
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+
+                .control {
+                    gap: 16px;
+                }
+
+                .txt-contract {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-top: 32px;
+                }
+
+                .contract-address {
+                    cursor: pointer;
+                    display: inline-flex;
+                    align-items: center;
+                    background: #7BB855;
+                    border: 2px solid #427621;
+                    border-radius: 16px;
+                    padding: 16px;
+                    margin-top: 16px;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        margin-right: 16px;
+                    }
+                }
+            }
+
+            .img-top-left {
+                margin-top: 110px;
+            }
+        }
+    }
+
+
+    .navbar-toggle,
+    .sp {
+        display: none;
+    }
+
+
+}
+
+.exchanges {
+    background: $color_primary;
+    padding: 24px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+            a {
+                img {}
+            }
+        }
+    }
+}
+
+.title {
+    font-family: 'Transducer-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.about {
+    background-image: url(../assets/background/bg_2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1600px;
+    height: 100%;
+    padding-top: 127px;
+
+    .inner {
+        width: 100%;
+        position: relative;
+
+        .title-left {
+            position: absolute;
+            top: -40px;
+            right: 6%;
+        }
+
+        p {
+            max-width: 628px;
+            font-family: 'Transducer-Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 30px;
+        }
+
+
+    }
+
+    .image-bottom {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.how-to-buy {
+    width: 100%;
+    background-image: url(../assets/background/bg_3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+
+    .inner {
+        h1 {
+            text-align: center;
+        }
+
+        ul.max-width {
+            display: flex;
+            justify-content: space-between;
+            gap: 23px;
+            padding-top: 64px;
+
+            li {
+                width: calc(100% / 3);
+                background: #FFFFFF;
+                border: 2px solid #508F47;
+                border-radius: 24px;
+                padding: 32px;
+
+                .buy-txt {
+                    font-family: 'Transducer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38px;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
+
+                span {
+                    font-family: 'Transducer-Regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 1px;
+                }
+
+                .btn {
+                    text-align: center;
+                    font-family: 'Transducer';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .tokenomic {
+            padding-top: 157px;
+
+            .title-tokenomic {
+                text-align: center;
+            }
+
+            .des-tokenomic {
+
+                font-family: 'Transducer';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 38px;
+                text-align: center;
+                margin-top: 10px;
+
+            }
+
+            .tokenomic-container {
+                width: 100%;
+                height: 500px;
+                padding-top: 80px;
+                position: relative;
+
+                .left {
+                    .supply {
+                        background-image: url(../assets/images/img_supply.png);
+                        background-repeat: no-repeat;
+                        width: 525px;
+                        height: 69px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            font-family: 'Transducer';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 25.6093px;
+                            line-height: 31px;
+                            text-transform: uppercase;
+                            color: #14510C;
+                        }
+                    }
+
+                    .supply-list {
+                        margin-top: 24px;
+
+                        li {
+                            color: #366A2F;
+                            list-style: disc;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            margin-left: 20px;
+
+                            &:nth-child(1) {
+                                list-style: none;
+                                margin-left: 0;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    position: absolute;
+                    right: 0;
+                    top: 150px;
+
+                    p {
+                        font-family: 'Transducer';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-transform: uppercase;
+                        color: #14510C;
+
+                        &:nth-child(2) {
+                            position: absolute;
+                            top: -20px;
+                            right: -30px;
+                        }
+
+                        &:nth-child(3) {
+                            position: absolute;
+                            bottom: 70px;
+                            right: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.roadmap {
+    width: 100%;
+    background-image: url(../assets/background/bg_4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h1 {
+        margin-top: 24px;
+    }
+
+    .roadmap-container {
+        width: 100%;
+        height: 516px;
+        max-width: $max_width;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        margin-top: 64px;
+
+        .roadmap-item-circle {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 519px;
+            height: 100%;
+
+            &:nth-child(1) {
+                left: 0;
+                padding-left: 85px;
+
+            }
+
+            &:nth-child(2) {
+                left: 30%;
+                padding-left: 85px;
+
+            }
+
+            &:nth-child(3) {
+                right: 0;
+                padding-left: 125px;
+
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                object-fit: contain;
+            }
+
+            ul {
+                text-align: left;
+
+                .phase {
+                    font-family: 'Transducer';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-transform: uppercase;
+                    list-style: none;
+                    margin-bottom: 18px;
+                }
+
+                .detail {
+                    list-style: disc;
+                    font-family: 'Transducer-Regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 1px;
+                    padding-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    .our {
+        margin-top: 100px;
+        padding-bottom: 450px;
+        position: relative;
+
+        .inner {
+            margin-left: 50px;
+
+            .socials {
+                display: inline-flex;
+                justify-content: center;
+                margin-top: 150px;
+            }
+        }
+    }
+}
+// END HEADER
+// SECTION INTRO
+.max-width {
+    max-width: $max_width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1290px) {
+    header, .exchanges, .about, .how-to-buy, .roadmap{
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}
+
+
+// END
